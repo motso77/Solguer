@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solguer S.R.L. - Estaciones de Servicio Puma</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #d80027;
+      padding: 30px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #006341;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdb00;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #006341;
+    }
+
+    .card {
+      background: #f5f5f5;
+      border-left: 6px solid #006341;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .contacto {
+      background-color: #ffffff;
+      border: 2px dashed #006341;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #006341;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #004d31;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #d80027;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.7em;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Puma_Energy_logo.svg/2560px-Puma_Energy_logo.svg.png" alt="logo puma energy">
+    <h1>SOLGUER S.R.L.</h1>
+    <p>Estaciones de Servicio Puma - Comprometidos con la Energía</p>
+  </header>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#ubicaciones">Ubicaciones</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="card">
+      <h3>Carga de Combustible</h3>
+      <p>Combustibles de alta calidad, atención rápida y personalizada.</p>
+    </div>
+    <div class="card">
+      <h3>Lubricantes y Productos</h3>
+      <p>Ofrecemos una línea completa de aceites, aditivos y accesorios.</p>
+    </div>
+    <div class="card">
+      <h3>Tienda de Conveniencia</h3>
+      <p>Todo lo que necesitás en tu viaje: snacks, bebidas, productos básicos.</p>
+    </div>
+  </section>
+
+  <section id="ubicaciones">
+    <h2>¿Dónde encontrarnos?</h2>
+    <p>📍 Camino del Sesquicentenario y Malvinas Argentinas, Bahía Blanca, Buenos Aires 8000</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.014235549499!2d-62.32619092407285!3d-38.694517271768134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbbba8d797dab%3A0xd75589bdde44426d!2sCamino%20Parque%20Sesquicentenario%20%26%20Malvinas%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748036852471!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+      <img src="https://irp-cdn.multiscreensite.com/548dfa93/MOBILE/png/2271941-fot1b-c9f0f.png" alt="Estación 1">
+      <img src="https://pumaenergyarg.com.ar/img/super_seven/super_seven_hero.png" alt="Conveniencia">
+      <img src="https://irp-cdn.multiscreensite.com/548dfa93/MOBILE/png/2271942-fot2b-16790.png" alt="Atención cliente">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <form action="https://formspree.io/f/xqaqovab" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Solguer S.R.L. | Estaciones de Servicio Puma | Todos los derechos reservados.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/549XXXXXXXXXX" target="_blank" title="Contactanos por WhatsApp">💬</a>
+
+</body>
+</html>
